@@ -21,6 +21,18 @@ body, button, input {
   font-family: "DM Sans", sans-serif;
 }
 
+button {
+  background-color: #7879F1;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 0 .4rem .4rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+/*screen 1*/
 main {
   background: #ffffff;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -61,13 +73,18 @@ input, button {
 
 input {
   background-color: #DCE2E9;
-  width: 5rem;
+  width: 6rem;
   border-radius: .4rem 0 0 .4rem;
 }
 
-button {
-  background-color: #7879F1;
-  color: #FFFFFF;
-  font-weight: bold;
-  border-radius: 0 .4rem .4rem 0;
+
+/*screen 2*/
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 3.3rem;
 }
+.screen2 button {
+  border-radius: .4rem;
+}
+
