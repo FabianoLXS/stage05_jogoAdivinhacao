@@ -26,6 +26,13 @@ button {
   color: #FFFFFF;
   font-weight: bold;
   border-radius: 0 .4rem .4rem 0;
+  cursor: pointer;
+  
+  transition: background .3s;
+}
+
+button:hover {
+  background-color: #6363ce;
 }
 
 .hide {
