@@ -17,8 +17,16 @@ function handleTryClick(event) {
   xAttempts++
 }
 
+function handleResetClick(event) {
+  event.preventDefault()
+
+    document.querySelector(".screen1").classList.remove("hide")
+    document.querySelector(".screen2").classList.add("hide")
+  }
+
 // Eventos
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 
 btnTry.addEventListener("click", handleTryClick)
+btnReset.addEventListener("click", handleResetClick)
