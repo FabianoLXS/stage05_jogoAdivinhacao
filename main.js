@@ -13,7 +13,7 @@ function handleTryClick(event) {
       ".screen2 h2"
     ).innerText = `acertou em ${xAttempts} tentativas`
   }
-
+  inputNumber.value = ""
   xAttempts++
 }
 
@@ -22,6 +22,7 @@ function handleResetClick(event) {
 
     document.querySelector(".screen1").classList.remove("hide")
     document.querySelector(".screen2").classList.add("hide")
+    xAttempts = 1
   }
 
 // Eventos
