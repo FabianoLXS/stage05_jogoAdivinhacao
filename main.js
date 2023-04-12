@@ -1,6 +1,12 @@
+//variaveis
 const randomNumber = Math.round(Math.random() * 10)
+const btnTry = document.querySelector("#btnTry")
+const btnReset = document.querySelector("#btnReset")
+
 let xAttempts = 1
 
+
+// Eventos
 function handleTryClick(event) {
   event.preventDefault()
 
@@ -16,7 +22,7 @@ function handleTryClick(event) {
   inputNumber.value = ""
   xAttempts++
 }
-
+//Função callBack
 function handleResetClick(event) {
   event.preventDefault()
 
@@ -25,9 +31,7 @@ function handleResetClick(event) {
     xAttempts = 1
   }
 
-// Eventos
-const btnTry = document.querySelector("#btnTry")
-const btnReset = document.querySelector("#btnReset")
+
 
 btnTry.addEventListener("click", handleTryClick)
 btnReset.addEventListener("click", handleResetClick)
