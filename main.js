@@ -4,6 +4,7 @@ const screen2 = document.querySelector(".screen2")
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 let randomNumber = Math.round(Math.random() * 10)
+console.log(randomNumber)
 let xAttempts = 1
 
 //eventos
@@ -46,7 +47,9 @@ function toggleScreen() {
 
 btnTry.addEventListener("click", handleTryClick)
 btnReset.addEventListener("click", handleResetClick)
-function enterTest() {
+
+//esta com problema essa função para apertar o enter
+function enterTest(e) {
   if (e.key == "Enter" && screen1.classList.contains("hide")) {
   }
 }
