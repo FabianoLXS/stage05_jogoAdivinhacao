@@ -10,7 +10,7 @@ let xAttempts = 1
 //eventos
 btnTry.addEventListener("click", handleTryClick)
 btnReset.addEventListener("click", handleResetClick)
-document.addEventListener("keypress", enterTest)
+document.addEventListener("keypress", enterTest) //verificar esta linha
 
 //funções
 function handleTryClick(event) {
@@ -19,8 +19,8 @@ function handleTryClick(event) {
   const inputNumber = document.querySelector("#inputNumber")
 
   if (Number(inputNumber.value) == randomNumber) {
-    document.querySelector(".screen1").classList.add("hide")
-    document.querySelector(".screen2").classList.remove("hide")
+    screen1.classList.toggle()
+    screen2.classList.toggle()
     document.querySelector(
       ".screen2 h2"
     ).innerText = `acertou em ${xAttempts} tentativas`
@@ -51,5 +51,6 @@ btnReset.addEventListener("click", handleResetClick)
 //esta com problema essa função para apertar o enter
 function enterTest(e) {
   if (e.key == "Enter" && screen1.classList.contains("hide")) {
+    toggleScreen()
   }
 }
