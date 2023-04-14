@@ -36,7 +36,7 @@ function handleResetClick() {
   randomNumber = Math.round(Math.random() * 10)
 }
 
-function toggleScreen() {
-  screen1.classList.toggle("hide")
-  screen2.classList.toggle("hide")
-}
+
+
+btnTry.addEventListener("click", handleTryClick)
+btnReset.addEventListener("click", handleResetClick)
