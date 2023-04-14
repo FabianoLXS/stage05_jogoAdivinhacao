@@ -21,13 +21,17 @@ function handleTryClick(event) {
 
   const inputNumber = document.querySelector("#inputNumber")
 
+  if (Number(inputNumber.value) > 10 || Number(inputNumber.value) < 0) {
+    alert("somente números entre 0 e 10 são permitidos")
+  }
+
   if (Number(inputNumber.value) == randomNumber) {
     toggleScreen()
     screen2.querySelector("h2").innerText = `acertou em ${xAttempts} tentativas`
   }
 
-  inputNumber.value = ""
   xAttempts++
+  inputNumber.value = ""
 }
 
 function handleResetClick() {
